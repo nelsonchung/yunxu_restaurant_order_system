@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d33">
+  <title>桌牌 QR Code｜雲序食堂</title>
+  <link rel="stylesheet" href="/static/app.css">
+  <script type="module" src="/static/qr.js"></script>
+</head>
+<body class="qr-page">
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/admin"><span class="brand-mark" aria-hidden="true">雲</span><span>雲序食堂</span></a>
+      <a class="button button-outline" href="/admin">回店家後台</a>
+    </div>
+  </header>
+  <main class="shell admin-main">
+    <div class="page-heading qr-heading">
+      <div>
+        <h1>桌牌 QR Code</h1>
+        <p class="muted">列印後依桌號擺放，客人連上店內 Wi-Fi 即可掃碼點餐。</p>
+      </div>
+      <button class="button button-primary" type="button" id="print-qr" disabled>列印六張桌牌</button>
+    </div>
+    <form id="qr-form" class="panel qr-form">
+      <label for="qr-base">點餐網址</label>
+      <div class="qr-input-row">
+        <input id="qr-base" type="url" placeholder="http://192.168.8.235:8083" required>
+        <button class="button button-outline" id="generate-qr" type="submit">產生 QR Code</button>
+      </div>
+      <p id="qr-message" class="muted" role="status"></p>
+    </form>
+    <div id="qr-cards" class="qr-grid"></div>
+  </main>
+</body>
+</html>

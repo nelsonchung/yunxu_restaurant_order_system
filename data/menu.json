@@ -1,0 +1,310 @@
+[
+  {
+    "id": "garlic-spicy-chicken",
+    "name": "蒜香辣味雞肉",
+    "category": "蒜香系列",
+    "price": 180,
+    "image": "/static/menu/garlic-spicy-chicken.webp"
+  },
+  {
+    "id": "garlic-white-wine-clams",
+    "name": "蒜香白酒蛤蠣",
+    "category": "蒜香系列",
+    "price": 190,
+    "image": "/static/menu/garlic-white-wine-clams.webp"
+  },
+  {
+    "id": "garlic-spicy-seafood",
+    "name": "蒜香辣味海鮮",
+    "category": "蒜香系列",
+    "price": 200,
+    "image": "/static/menu/garlic-spicy-seafood.webp"
+  },
+  {
+    "id": "spicy-tomato-chicken",
+    "name": "辣味番茄雞肉",
+    "category": "蕃茄紅醬系列",
+    "price": 180,
+    "image": "/static/menu/spicy-tomato-chicken.webp"
+  },
+  {
+    "id": "sicilian-meat-sauce",
+    "name": "西西里肉醬",
+    "category": "蕃茄紅醬系列",
+    "price": 190,
+    "image": "/static/menu/sicilian-meat-sauce.webp"
+  },
+  {
+    "id": "tomato-seafood",
+    "name": "紅茄海鮮",
+    "category": "蕃茄紅醬系列",
+    "price": 200,
+    "image": "/static/menu/tomato-seafood.webp"
+  },
+  {
+    "id": "cream-bacon",
+    "name": "奶油培根",
+    "category": "奶油白醬系列",
+    "price": 180,
+    "image": "/static/menu/cream-bacon.webp"
+  },
+  {
+    "id": "cream-smoked-chicken",
+    "name": "奶油燻雞",
+    "category": "奶油白醬系列",
+    "price": 180,
+    "image": "/static/menu/cream-smoked-chicken.webp"
+  },
+  {
+    "id": "cream-clams",
+    "name": "奶油蛤蠣",
+    "category": "奶油白醬系列",
+    "price": 190,
+    "image": "/static/menu/cream-clams.webp"
+  },
+  {
+    "id": "cream-seafood",
+    "name": "奶油海鮮",
+    "category": "奶油白醬系列",
+    "price": 200,
+    "image": "/static/menu/cream-seafood.webp"
+  },
+  {
+    "id": "pesto-pork",
+    "name": "青醬梅花豬",
+    "category": "青醬系列",
+    "price": 180,
+    "image": "/static/menu/pesto-pork.webp"
+  },
+  {
+    "id": "pesto-sausage",
+    "name": "青醬德腸",
+    "category": "青醬系列",
+    "price": 180,
+    "image": "/static/menu/pesto-sausage.webp"
+  },
+  {
+    "id": "pesto-seafood",
+    "name": "青醬海鮮",
+    "category": "青醬系列",
+    "price": 200,
+    "image": "/static/menu/pesto-seafood.webp"
+  },
+  {
+    "id": "thai-spicy-chicken",
+    "name": "泰式香辣雞肉",
+    "category": "泰式香辣系列",
+    "price": 180,
+    "image": "/static/menu/thai-spicy-chicken.webp"
+  },
+  {
+    "id": "thai-spicy-sausage",
+    "name": "泰式香辣德腸",
+    "category": "泰式香辣系列",
+    "price": 180,
+    "image": "/static/menu/thai-spicy-sausage.webp"
+  },
+  {
+    "id": "thai-spicy-clams",
+    "name": "泰式香辣蛤蠣",
+    "category": "泰式香辣系列",
+    "price": 190,
+    "image": "/static/menu/thai-spicy-clams.webp"
+  },
+  {
+    "id": "thai-spicy-seafood",
+    "name": "泰式香辣海鮮",
+    "category": "泰式香辣系列",
+    "price": 200,
+    "image": "/static/menu/thai-spicy-seafood.webp"
+  },
+  {
+    "id": "cream-vegetables",
+    "name": "奶油田園錦蔬",
+    "category": "素食系列",
+    "price": 180,
+    "image": "/static/menu/cream-vegetables.webp"
+  },
+  {
+    "id": "curry-vegetables",
+    "name": "印度咖哩錦蔬",
+    "category": "素食系列",
+    "price": 180,
+    "image": "/static/menu/curry-vegetables.webp"
+  },
+  {
+    "id": "pumpkin-vegetables",
+    "name": "南瓜田園錦蔬",
+    "category": "素食系列",
+    "price": 200,
+    "image": "/static/menu/pumpkin-vegetables.webp"
+  },
+  {
+    "id": "curry-meat-sauce",
+    "name": "印度咖哩肉醬",
+    "category": "隱藏菜單",
+    "price": 180,
+    "image": "/static/menu/curry-meat-sauce.webp"
+  },
+  {
+    "id": "thai-indian-curry-seafood",
+    "name": "印泰雙降海鮮",
+    "category": "隱藏菜單",
+    "price": 220,
+    "image": "/static/menu/thai-indian-curry-seafood.webp"
+  },
+  {
+    "id": "pumpkin-chicken",
+    "name": "香濃南瓜雞肉",
+    "category": "隱藏菜單",
+    "price": 200,
+    "image": "/static/menu/pumpkin-chicken.webp"
+  },
+  {
+    "id": "pumpkin-seafood",
+    "name": "香濃南瓜海鮮",
+    "category": "隱藏菜單",
+    "price": 220,
+    "image": "/static/menu/pumpkin-seafood.webp"
+  },
+  {
+    "id": "cheese-meat-sharing-pot",
+    "name": "香濃起司肉多多分享鍋(雞肉/德腸/培根/起司)",
+    "category": "香濃起司分享系列(可兩人分享)",
+    "price": 380,
+    "image": "/static/menu/cheese-meat-sharing-pot.webp"
+  },
+  {
+    "id": "cheese-surf-and-turf-sharing-pot",
+    "name": "香濃起司海陸分享鍋(雞肉/德腸/培根/起司)",
+    "category": "香濃起司分享系列(可兩人分享)",
+    "price": 430,
+    "image": "/static/menu/cheese-surf-and-turf-sharing-pot.webp"
+  },
+  {
+    "id": "baked-tomato-meat-sauce",
+    "name": "焗烤紅茄肉醬",
+    "category": "焗烤系列",
+    "price": 240,
+    "image": "/static/menu/baked-tomato-meat-sauce.webp"
+  },
+  {
+    "id": "baked-cream-smoked-chicken",
+    "name": "焗烤奶油燻雞",
+    "category": "焗烤系列",
+    "price": 240,
+    "image": "/static/menu/baked-cream-smoked-chicken.webp"
+  },
+  {
+    "id": "baked-pumpkin-bacon",
+    "name": "焗烤南瓜培根",
+    "category": "焗烤系列",
+    "price": 250,
+    "image": "/static/menu/baked-pumpkin-bacon.webp"
+  },
+  {
+    "id": "baked-tomato-seafood",
+    "name": "焗烤紅茄海鮮",
+    "category": "焗烤系列",
+    "price": 260,
+    "image": "/static/menu/baked-tomato-seafood.webp"
+  },
+  {
+    "id": "baked-cream-seafood",
+    "name": "焗烤奶油海鮮",
+    "category": "焗烤系列",
+    "price": 260,
+    "image": "/static/menu/baked-cream-seafood.webp"
+  },
+  {
+    "id": "baked-pesto-seafood",
+    "name": "焗烤青醬海鮮",
+    "category": "焗烤系列",
+    "price": 260,
+    "image": "/static/menu/baked-pesto-seafood.webp"
+  },
+  {
+    "id": "garden-salad",
+    "name": "田園沙拉佐柚子油醋醬",
+    "category": "輕食/軟法沙拉盤",
+    "price": 80,
+    "image": "/static/menu/garden-salad.webp"
+  },
+  {
+    "id": "baked-meat-sauce-bread",
+    "name": "焗肉醬軟法麵包",
+    "category": "輕食/軟法沙拉盤",
+    "price": 120,
+    "image": "/static/menu/baked-meat-sauce-bread.webp"
+  },
+  {
+    "id": "baked-tomato-meat-sauce-bread-salad",
+    "name": "焗蕃茄肉醬軟法沙拉盤",
+    "category": "輕食/軟法沙拉盤",
+    "price": 280,
+    "image": "/static/menu/baked-tomato-meat-sauce-bread-salad.webp"
+  },
+  {
+    "id": "soup-and-garlic-bread",
+    "name": "主廚濃湯 + 蒜香軟法",
+    "category": "升級套餐",
+    "price": 80,
+    "image": "/static/menu/soup-and-garlic-bread.webp"
+  },
+  {
+    "id": "soup-garlic-bread-and-drink",
+    "name": "主廚濃湯 + 蒜香軟法 + 飲料",
+    "category": "升級套餐",
+    "price": 130,
+    "image": "/static/menu/soup-garlic-bread-and-drink.webp"
+  },
+  {
+    "id": "soup",
+    "name": "主廚濃湯",
+    "category": "單點/飲料",
+    "price": 50,
+    "image": "/static/menu/soup.webp"
+  },
+  {
+    "id": "garlic-bread",
+    "name": "蒜香軟法",
+    "category": "單點/飲料",
+    "price": 50,
+    "image": "/static/menu/garlic-bread.webp"
+  },
+  {
+    "id": "black-tea",
+    "name": "紅茶(冰/熱)",
+    "category": "單點/飲料",
+    "price": 60,
+    "image": "/static/menu/black-tea.webp"
+  },
+  {
+    "id": "coffee",
+    "name": "咖啡(冰/熱)",
+    "category": "單點/飲料",
+    "price": 60,
+    "image": "/static/menu/coffee.webp"
+  },
+  {
+    "id": "orange-juice",
+    "name": "柳橙汁",
+    "category": "單點/飲料",
+    "price": 50,
+    "image": "/static/menu/orange-juice.webp"
+  },
+  {
+    "id": "cola",
+    "name": "可樂",
+    "category": "單點/飲料",
+    "price": 50,
+    "image": "/static/menu/cola.webp"
+  },
+  {
+    "id": "sprite",
+    "name": "雪碧",
+    "category": "單點/飲料",
+    "price": 50,
+    "image": "/static/menu/sprite.webp"
+  }
+]

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d33">
+  <title>店家後台｜雲序食堂</title>
+  <link rel="stylesheet" href="/static/app.css">
+  <script type="module" src="/static/admin.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/admin"><span class="brand-mark" aria-hidden="true">雲</span><span>雲序食堂</span></a>
+      <nav id="admin-nav" class="header-actions" aria-label="店家選單" hidden>
+        <a class="button button-outline" href="/admin/qr">桌牌 QR Code</a>
+        <button class="button button-flat" id="logout" type="button">登出</button>
+      </nav>
+    </div>
+  </header>
+  <main class="shell admin-main">
+    <section id="login-panel" class="login-panel panel" aria-labelledby="login-title" hidden>
+      <h1 id="login-title">店家登入</h1>
+      <form id="login-form">
+        <label for="password">後台密碼</label>
+        <input id="password" type="password" autocomplete="current-password" required>
+        <p id="login-error" class="form-message error" role="alert" hidden></p>
+        <button id="login-submit" class="button button-primary" type="submit">登入後台</button>
+      </form>
+    </section>
+    <p id="admin-error" class="form-message error" role="alert" hidden></p>
+    <section id="dashboard" aria-labelledby="admin-title" hidden>
+      <div class="page-heading">
+        <div>
+          <p id="dashboard-date" class="muted page-kicker"></p>
+          <h1 id="admin-title">店家後台</h1>
+        </div>
+        <div class="dashboard-actions">
+          <span class="connection" id="connection-status" role="status">連線中</span>
+          <button class="button button-outline" id="sound-toggle" type="button" aria-pressed="false">開啟提示音</button>
+        </div>
+      </div>
+      <div id="notification" class="notification" hidden>
+        <p id="notification-text" role="alert"></p>
+        <button id="dismiss-notification" class="button button-flat" type="button">關閉提醒</button>
+      </div>
+      <section class="sales-section" aria-labelledby="sales-title">
+        <div class="section-title"><h2 id="sales-title">已結帳金額</h2></div>
+        <dl class="metric-grid">
+          <div class="panel metric"><dt>今日</dt><dd id="sales-day"></dd></div>
+          <div class="panel metric"><dt>本月</dt><dd id="sales-month"></dd></div>
+          <div class="panel metric"><dt>今年</dt><dd id="sales-year"></dd></div>
+        </dl>
+      </section>
+      <section class="tables-section" aria-labelledby="tables-title">
+        <div class="section-title">
+          <h2 id="tables-title">桌況</h2>
+          <span id="table-summary" class="muted"></span>
+        </div>
+        <div id="active-tables" class="table-grid"></div>
+      </section>
+      <section class="orders-section" aria-labelledby="orders-title">
+        <div class="section-title"><h2 id="orders-title">今日訂單</h2><span id="order-count" class="muted"></span></div>
+        <p id="no-orders" class="muted" hidden>今日尚無訂單。</p>
+        <div id="today-orders" class="order-history"></div>
+      </section>
+    </section>
+  </main>
+  <dialog id="settle-dialog" aria-labelledby="settle-title">
+    <div class="dialog-header">
+      <h2 id="settle-title">確認收款</h2>
+      <form method="dialog"><button class="button button-outline">取消</button></form>
+    </div>
+    <p id="settle-description"></p>
+    <p id="settle-error" class="form-message error" role="alert" hidden></p>
+    <div class="dialog-actions">
+      <strong id="settle-total"></strong>
+      <button class="button button-primary" id="confirm-settle" type="button">已收款，完成結帳</button>
+    </div>
+  </dialog>
+</body>
+</html>

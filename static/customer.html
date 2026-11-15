@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d33">
+  <title>桌邊點餐｜雲序食堂</title>
+  <link rel="stylesheet" href="/static/app.css">
+  <script type="module" src="/static/customer.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/" aria-label="雲序食堂首頁"><span class="brand-mark" aria-hidden="true">雲</span><span>雲序食堂</span></a>
+      <button class="button button-outline" id="show-bill" type="button" hidden>本桌帳單</button>
+    </div>
+  </header>
+  <main class="shell diner-main">
+    <section class="diner-hero" aria-labelledby="diner-title">
+      <div class="diner-hero-copy">
+        <span class="table-label" id="table-label" hidden></span>
+        <h1 id="diner-title">桌邊點餐</h1>
+        <p>選好餐點後送單，餐後可通知店員結帳。</p>
+      </div>
+      <img id="hero-image" class="diner-hero-image" alt="" hidden>
+    </section>
+    <p id="customer-error" class="form-message error" role="alert" hidden></p>
+    <section id="menu-section" class="menu-section" aria-labelledby="menu-title">
+      <div class="section-title">
+        <h2 id="menu-title">菜單</h2>
+        <span id="menu-count" class="muted"></span>
+      </div>
+      <div id="categories" class="categories" aria-label="餐點分類" hidden></div>
+      <p id="menu-status" class="muted" role="status">正在載入菜單…</p>
+      <div id="menu-items" class="menu-grid"></div>
+    </section>
+    <p id="customer-status" class="visually-hidden" role="status" aria-live="polite"></p>
+  </main>
+  <div id="cart-bar" class="cart-bar" hidden>
+    <div class="shell cart-bar-inner">
+      <div><span id="cart-count" class="muted"></span><strong id="cart-total"></strong></div>
+      <button id="show-cart" class="button button-primary" type="button">查看購物車</button>
+    </div>
+  </div>
+  <dialog id="cart-dialog" aria-labelledby="cart-title">
+    <div class="dialog-header">
+      <h2 id="cart-title">購物車</h2>
+      <form method="dialog"><button class="button button-outline" aria-label="關閉購物車">關閉</button></form>
+    </div>
+    <div id="cart-lines" class="line-list"></div>
+    <form id="order-form">
+      <label for="order-note">餐點備註 <span class="muted">選填</span></label>
+      <textarea id="order-note" maxlength="200" rows="2" placeholder="例如：餐具兩份"></textarea>
+      <p id="cart-error" class="form-message error" role="alert" hidden></p>
+      <div class="dialog-actions">
+        <strong id="cart-dialog-total"></strong>
+        <button id="submit-order" class="button button-primary" type="submit">送出訂單</button>
+      </div>
+    </form>
+  </dialog>
+  <dialog id="bill-dialog" aria-labelledby="bill-title">
+    <div class="dialog-header">
+      <h2 id="bill-title">本桌帳單</h2>
+      <form method="dialog"><button class="button button-outline" aria-label="關閉帳單">關閉</button></form>
+    </div>
+    <div id="bill-orders" class="line-list"></div>
+    <p id="bill-message" class="form-message" role="status" hidden></p>
+    <div class="dialog-actions">
+      <strong id="bill-total"></strong>
+      <button id="request-checkout" class="button button-primary" type="button">通知店員結帳</button>
+    </div>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,27 @@
+[Unit]
+Description=Yunxu Restaurant Order System
+After=network.target
+RequiresMountsFor=/media/nelson/work-disk/web-site/yunxu_restaurant_order_system
+
+[Service]
+User=nelson
+Group=nelson
+WorkingDirectory=/media/nelson/work-disk/web-site/yunxu_restaurant_order_system
+Environment=YUNXU_HOST=127.0.0.1
+Environment=YUNXU_PORT=8183
+Environment=YUNXU_PUBLIC_BASE=http://192.168.8.235:8083
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=PYTHONUNBUFFERED=1
+LoadCredential=admin-password:/media/nelson/work-disk/web-site/yunxu_restaurant_order_system/instance/admin-password
+ExecStart=/usr/bin/python3 app.py
+Restart=on-failure
+RestartSec=3
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/media/nelson/work-disk/web-site/yunxu_restaurant_order_system/instance
+
+[Install]
+WantedBy=multi-user.target
