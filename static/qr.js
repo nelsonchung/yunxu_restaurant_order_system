@@ -23,7 +23,7 @@ async function load(base) {
       image.alt = '第 ' + table.table + ' 桌點餐 QR Code';
       const link = node('a', 'qr-url', table.url);
       link.href = table.url;
-      card.append(node('span', 'qr-brand', '雲序食堂'), node('h2', '', '第 ' + table.table + ' 桌'),
+      card.append(node('span', 'qr-brand', '鋆旭食堂'), node('h2', '', '第 ' + table.table + ' 桌'),
         image, node('p', 'qr-instruction', '掃碼點餐'), link);
       return { card, image };
     });

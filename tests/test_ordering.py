@@ -40,13 +40,14 @@ class OrderingTest(unittest.TestCase):
     def test_qr_codes_decode_to_six_distinct_table_links(self):
         self.assertEqual(set(self.tables), set(range(1, 7)))
         self.assertEqual(len(set(self.tables.values())), 6)
+        scanner = cv2.wechat_qrcode_WeChatQRCode()
         for result in self.qr:
             with self.subTest(table=result['table']):
                 image = base64.b64decode(result['image'].split(',', 1)[1])
                 code = cv2.imdecode(np.frombuffer(image, dtype=np.uint8), cv2.IMREAD_GRAYSCALE)
-                decoded, _, _ = cv2.QRCodeDetector().detectAndDecode(code)
-                self.assertEqual(decoded, result['url'])
-                self.assertEqual(urlsplit(decoded).path, f"/table/{result['table']}")
+                decoded, _ = scanner.detectAndDecode(code)
+                self.assertEqual(decoded, (result['url'],))
+                self.assertEqual(urlsplit(decoded[0]).path, f"/table/{result['table']}")
 
     def test_checkout_rejects_stale_bill_and_preserves_other_table(self):
         self.assertEqual(self.submit(2, 1, 'invalid-table-key', self.tables[1]).status_code, 403)
